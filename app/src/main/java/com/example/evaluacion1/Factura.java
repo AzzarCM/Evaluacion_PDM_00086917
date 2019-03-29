@@ -10,6 +10,7 @@ public class Factura extends AppCompatActivity {
 
     private TextView mUser, mEmail, cont1, cont2,cont3, cont4, cont5, cont6, cont7, cont8, cont9, total;
     private Button mShare;
+    String miJson;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,18 +51,15 @@ public class Factura extends AppCompatActivity {
         }
 
         mShare.setOnClickListener(v -> {
-            String getCont1 = cont1.getText().toString();
-            String getCont2 = cont2.getText().toString();
-            String getCont3 = cont3.getText().toString();
-            String getCont4 = cont4.getText().toString();
-            String getCont5 = cont5.getText().toString();
-            String getCont6 = cont6.getText().toString();
-            String getCont7 = cont7.getText().toString();
-            String getCont8 = cont8.getText().toString();
-            String getCont9 = cont9.getText().toString();
+            Intent tIntent = new Intent();
+            String totalSuma = total.getText().toString();
+            String userName = mUser.getText().toString();
+            miJson = "El cliente " +userName+" llevo un total de " +totalSuma +" productos!!!";
 
-            mIntent.setType("text/plain");
-            mIntent.setAction(Intent.ACTION_SEND);
+            tIntent.setType("text/plain");
+            tIntent.setAction(Intent.ACTION_SEND);
+            tIntent.putExtra(tIntent.EXTRA_TEXT, miJson);
+            startActivity(tIntent);
         });
     }
 }
