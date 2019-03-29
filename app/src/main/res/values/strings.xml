@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Evaluacion1</string>
+    <string name="contador_de_productos">Contador de productos</string>
+    <string name="contador_1">contador 1</string>
+    <string name="contador_2">contador 2</string>
+    <string name="contador_3">contador 3</string>
+    <string name="contador_4">contador 4</string>
+    <string name="contador_5">contador 5</string>
+    <string name="contador_6">contador 6</string>
+    <string name="contador_9">contador 9</string>
+    <string name="contador_10">contador 10</string>
+    <string name="contador_7">contador 7</string>
+    <string name="contador_8">contador 8</string>
+
+    <string name="ecribe_el_usuario_aqui">Ecribe el usuario aqui</string>
+    <string name="escribe_el_correo_aqui">Escribe el correo aqui</string>
+    <string name="enviar">Enviar</string>
+    <string name="usuario">Usuario</string>
+    <string name="user">Usuario:</string>
+    <string name="correo">Correo:</string>
+    <string name="total">total</string>
+    <string name="TOT">TOTAL:</string>
+</resources>
